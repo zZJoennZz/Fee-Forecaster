@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Forecaster</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <!-- This small code is written for Dr. Chloe Carmichael -->
+    <div class="ff-fields">
+        <div class="row">
+            <div class="col-12 welcome-message">
+            <div class="welcome-header">Welcome to this free online fee forecaster from Dr. Chloe for Clinicians</div>
+            <div class="welcome-body">
+                This forecaster helps you realize how steady annual increases to your fee will add up in the long term. If you want help navigating conversations on fees with clients, or generating enough demand for your sessions that you're able to feel confident in the idea of a fee increase, <a href="https://www.drchloe.com/for-clinicians" target="_blank">www.drchloe.com/for-clinicians</a> is here to help!
+            </div>
+            </div>
+        
+            <div class="col-12">
+            <form>
+                <label class="ff-label" for="ct-per-week">Number of clients per week:</label>
+                <div class="ff-formdiv"><input type="text" class="ff-text" name="ct-per-week" id="ct-per-week" value="20" autocomplete="off" placeholder="Number of clients per week" /></div>
+                <label class="ff-label" for="num-of-week">Number of weeks you see clients per year:</label>
+                <div class="ff-formdiv"><input type="text" class="ff-text" name="num-of-weeks" id="num-of-weeks" value="45" autocomplete="off" placeholder="Number of weeks you see clients per year" /></div>
+                <label class="ff-label" for="num-of-week"><strong>Fee per session:</strong></label>
+                <div class="ff-formdiv"><input type="text" class="ff-text" name="fee-per-session" id="fee-per-session" value="200" autocomplete="off" placeholder="Fee per session" /></div>
+            </form>
+            <button type="button" name="button" onclick="computeTable()">Compute</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+            <div class="table-header">
+                Cost per visit if you raise your fees by 10% per year
+            </div>
+            <div style="overflow-x:auto;">
+                <table style="width: 100%;">
+                <thead>
+                    <tr>
+                    <th>Year</th>
+                    <th>Current</th>
+                    <th>Next</th>
+                    </tr>
+                </thead>
+                <tbody class="tenPYr">
+                    <tr><td colspan="3">EMPTY</td></tr>
+                </tbody>
+                <thead>
+                    <tr>
+                    <th>Year</th>
+                    <th>Weekly income:</th>
+                    <th>Annual income:</th>
+                    </tr>
+                </thead>
+                <tbody class="tenWkIn">
+                    <tr><td colspan="3">EMPTY</td></tr>
+                </tbody>
+                </table>
+            </div>
+            </div>
+            <div class="col-6">
+            <div class="table-header">
+                Cost per visit if you raise your fees by 15% per year
+            </div>
+            <div style="overflow-x:auto;">
+                <table style="width: 100%;">
+                <thead>
+                    <tr>
+                    <th>Year</th>
+                    <th>Current</th>
+                    <th>Next</th>
+                    </tr>
+                </thead>
+                <tbody class="fifPYr">
+                    <tr><td colspan="3">EMPTY</td></tr>
+                </tbody>
+                <thead>
+                    <tr>
+                    <th>Year</th>
+                    <th>Weekly income:</th>
+                    <th>Annual income:</th>
+                    </tr>
+                </thead>
+                <tbody class="fifWkIn">
+                    <tr><td colspan="3">EMPTY</td></tr>
+                </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/app.js"></script>
+</body>
+</html>
